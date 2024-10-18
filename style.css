@@ -1,0 +1,87 @@
+/* Modern styling for the navbar */
+.navbar {
+    background: linear-gradient(90deg, #5c6bc0, #42a5f5); /* Inverted gradient */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem; /* Increased font size */
+    letter-spacing: 1px;
+    color: #fff; /* Text color */
+    text-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.4), /* Softer shadow with slight blur */
+        0 2px 4px rgba(0, 0, 0, 0.6); /* Deeper shadow */
+  }
+  
+  .nav-link {
+    font-size: 1.1rem; /* Increased font size */
+    margin-left: 15px; /* Spacing between links */
+    color: #e3f2fd; /* Light color for nav links */
+    transition: color 0.3s ease; /* Transition effect for hover */
+  }
+  
+  .nav-link:hover {
+    color: #fff; /* Change to white on hover */
+    text-decoration: underline; /* Underline effect on hover */
+  }
+  
+  /* Dark/Light Mode Toggle Icon */
+  .theme-toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .theme-toggle-btn:hover {
+    color: #ffc107; /* Color change on hover */
+  }
+  
+  /* Add smooth transitions */
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Dark/Light mode styling */
+  body[data-bs-theme="light"] {
+    background-color: #f8f9fa;
+    color: #212529;
+  }
+  
+  body[data-bs-theme="dark"] {
+    background-color: #121212;
+    color: #f8f9fa;
+  }
+  
+  /* Form field styles */
+  input, select, textarea {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  /* Light theme for input fields */
+  body[data-bs-theme="light"] input,
+  body[data-bs-theme="light"] select,
+  body[data-bs-theme="light"] textarea {
+    background-color: #ffffff; /* Light background */
+    color: #212529; /* Dark text */
+    border: 1px solid #ced4da; /* Light border */
+  }
+  
+  /* Dark theme for input fields */
+  body[data-bs-theme="dark"] input,
+  body[data-bs-theme="dark"] select,
+  body[data-bs-theme="dark"] textarea {
+    background-color: #343a40; /* Dark background */
+    color: #f8f9fa; /* Light text */
+    border: 1px solid #495057; /* Dark border */
+  }
+  
+  /* Card padding */
+  .container {
+    margin-top: 5px;
+    padding: 20px;
+  }
+  
